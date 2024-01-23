@@ -12,13 +12,13 @@ import json
 import time
 from filelock import FileLock, Timeout
 
-TOKEN = os.getenv('DISCORD_BOT_TOKEN_BM')  # Fetch token from environment variable
-SERVER_ID = [1105589864453394472]  # Followfox AI Testbed
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')  # Fetch token from environment variable
+SERVER_ID = [1192238876115353773]  # Your Own Discord Channel ID
 IMG_PER_BATCH = 1  # Number of images to generate per batch
 TOTAL_BATCHES = 4  # Maximum number of batches to generate (Warning: IMG_PER_BATCH * TOTAL_BATCHES must be <= 10)
 base_url = "http://127.0.0.1:7860"
 
-MODEL_NAME = "1_bloody_mary_v1.safetensors [ac7d34f7c9]"
+MODEL_NAME = "bloody_mary_v1.safetensors [ac7d34f7c9]" # Change to your Model Name
 BOT_NAME = 'create'
 BOT_DESCRIPTION = 'Create upscaled images using FollowFox AI Bloody Mary'
 
